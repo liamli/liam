@@ -1706,6 +1706,8 @@ h6, .ui-txt-tips {
   font-weight: 500; }
 
 .ui-table td, .ui-table th {
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
   text-align: center; }
@@ -2580,8 +2582,9 @@ h6, .ui-txt-tips {
   width: 100%; }
 
 .ui-tab-nav li.current {
-  color: #00a5e0;
-  border-bottom: 2px #00a5e0 solid; }
+  color: #F72F5A;
+  font-weight: bolder;
+  border-bottom: 3px #F72F5A solid; }
 
 .ui-tab-nav li:active {
   opacity: .8; }
