@@ -8,21 +8,22 @@
         <link rel="stylesheet" href="./frozenui/css/frozen.css">
     </head>
     <body ontouchstart="">
+        <!--
         <header class="ui-header ui-header-positive ui-border-b">
-        	<!--
             <i class="ui-icon-return" onclick="history.back()"></i>
-            -->
             <h1>大卖车贷-月供计算器</h1>
         </header>
+        -->
+        <footer class="ui-footer ui-footer-btn ui-flex ui-flex-pack-center">
+        	<img src="./img/logo.png" style="height:35px;" />
         <!--
-        <footer class="ui-footer ui-footer-btn">
             <ul class="ui-tiled ui-border-t">
                 <li data-href="index.html" class="ui-border-r"><div>首页</div></li>
                 <li data-href="ui.html" class="ui-border-r"><div>计算器</div></li>
                 <li data-href="js.html"><div>关于大卖车</div></li>
             </ul>
-        </footer>
         -->
+        </footer>
         <section class="ui-container">
             <section id="tab">
             	<div class="demo-item">
@@ -77,16 +78,16 @@
 									            <label>
 									                交易价格
 									            </label>
-									            <input id="1p3_price" type="text" placeholder="请输入实际交易价格">
+									            <input id="1px_price" type="text" placeholder="请输入实际交易价格">
 									        </div>
 									        <div class="ui-form-item ui-border-b">
 									            <label>
 									                首付金额
 									            </label>
-									            <input id="1p3_shoufu" type="text" placeholder="请输入首付金额">
+									            <input id="1px_shoufu" type="text" placeholder="请输入首付金额">
 									        </div>
 									        <div class="ui-btn-wrap">
-											    <button id="cal1px" class="ui-btn-lg ui-btn-primary">
+											    <button id="cal1px" class="ui-btn-lg ui-btn-primary" disabled>
 											        正在开发中！！敬请期待
 											    </button>
 											</div>
@@ -99,15 +100,42 @@
 									    <tr><td>第二年月供</td><td class="1px_one">0000</td></tr>
 									    <tr><td>第三年月供</td><td class="1px_one">0000</td></tr>
 									    <tr><td>第四年月供</td><td class="1px_four">0000</td></tr>
-									    <tr><td>第三年尾款</td><td class="1px_last">0000</td></tr>
 									    </tbody>
 									</table>
             			        	<!-- ---------------------------------------- -->
             			        </li>
             			        <li>
-            			        	<section class="ui-container ui-center">
-            			        	正在开发中！！敬请期待
-            			        	</section>
+            			        	<!-- ---------------- -->
+            			        	<div class="ui-form ui-border-t" style="margin-top: 15px;">
+									    <form action="#">
+									        <div class="ui-form-item ui-border-b">
+									            <label>
+									                交易价格
+									            </label>
+									            <input id="3y_price" type="text" placeholder="请输入实际交易价格">
+									        </div>
+									        <div class="ui-form-item ui-border-b">
+									            <label>
+									                首付金额
+									            </label>
+									            <input id="3y_shoufu" type="text" placeholder="请输入首付金额">
+									        </div>
+									        <div class="ui-btn-wrap">
+											    <button id="cal3y" class="ui-btn-lg ui-btn-primary">
+											        计算
+											    </button>
+											</div>
+									    </form>
+									</div>
+
+									<table class="ui-table ui-border" style="margin-top: 15px;">
+									    <tbody>
+									    <tr><td style="width: 40%">首年月供</td><td class="3y_one">0000</td></tr>
+									    <tr><td>第二年月供</td><td class="3y_one">0000</td></tr>
+									    <tr><td>第三年月供</td><td class="3y_one">0000</td></tr>
+									    </tbody>
+									</table>
+            			        	<!-- ---------------- -->
             			        </li>
             			    </ul>
             			</div>
