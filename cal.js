@@ -23,17 +23,12 @@ $("#cal3p1").bind("click", function(event) {
 		return;
 	}
 
-
 	var p3p1_one = (p3p1_price - p3p1_shoufu) * 0.02913 ;
 	var p3p1_four = (p3p1_price - p3p1_shoufu) * 0.02257 ;
 	var p3p1_last = (p3p1_price - p3p1_shoufu) * 0.25 ;
 
-	p3p1_one = Math.round( p3p1_one );
-	p3p1_four = Math.round( p3p1_four );
-	p3p1_last = Math.round( p3p1_last );
-
-	$(".3p1_one").text( p3p1_one );
-	$(".3p1_four").text( p3p1_four );
-	$(".3p1_last").text( p3p1_last );
+	$(".3p1_one").text( Math.round( p3p1_one ) );
+	$(".3p1_four").text( Math.round( p3p1_four ) );
+	$(".3p1_last").text( Math.round( p3p1_last ) );
 
 });
