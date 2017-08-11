@@ -42,7 +42,7 @@
 									            <label>
 									                交易价格
 									            </label>
-									            <input type="text" placeholder="请输入实际交易价格">
+									            <input id="3p1_price" type="text" placeholder="请输入实际交易价格">
 									            <a href="#" class="ui-icon-close">
 									            </a>
 									        </div>
@@ -50,12 +50,12 @@
 									            <label>
 									                首付金额
 									            </label>
-									            <input type="text" placeholder="请输入首付金额">
+									            <input id="3p1_shoufu" type="text" placeholder="请输入首付金额">
 									            <a href="#" class="ui-icon-close">
 									            </a>
 									        </div>
 									        <div class="ui-btn-wrap">
-											    <button class="ui-btn-lg ui-btn-primary">
+											    <button id="cal3p1" class="ui-btn-lg ui-btn-primary">
 											        计算
 											    </button>
 											</div>
@@ -64,11 +64,11 @@
 
 									<table class="ui-table ui-border" style="margin-top: 15px;">
 									    <tbody>
-									    <tr><td style="width: 40%">首年月供</td><td>0000</td></tr>
-									    <tr><td>第二年月供</td><td>0000</td></tr>
-									    <tr><td>第三年月供</td><td>0000</td></tr>
-									    <tr><td>第四年月供</td><td>0000</td></tr>
-									    <tr><td>第三年尾款</td><td>0000</td></tr>
+									    <tr><td style="width: 40%">首年月供</td><td class="3p1_one">0000</td></tr>
+									    <tr><td>第二年月供</td><td class="3p1_one">0000</td></tr>
+									    <tr><td>第三年月供</td><td class="3p1_one">0000</td></tr>
+									    <tr><td>第四年月供</td><td class="3p1_four">0000</td></tr>
+									    <tr><td>第三年尾款</td><td class="3p1_last">0000</td></tr>
 									    </tbody>
 									</table>
             			        	<!-- ---------------- -->
@@ -94,6 +94,8 @@
         </section>
         <script src="./frozenui/lib/zepto.min.js"></script>
         <script src="./frozenui/js/frozen.js"></script>
+        <script src="./jquery-3.2.1.slim.min.js"></script>
+        <script src="./cal.js"></script>
         <script>
         (function (){
             var tab = new fz.Scroll('.ui-tab', {
